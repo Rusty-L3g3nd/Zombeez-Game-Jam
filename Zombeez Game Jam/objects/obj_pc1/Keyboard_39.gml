@@ -6,3 +6,4 @@ sprite_index = spr_pc1_running_11;
 image_speed = 0.5;
 image_xscale = 10;
 image_yscale = 10;
+i = 0;
