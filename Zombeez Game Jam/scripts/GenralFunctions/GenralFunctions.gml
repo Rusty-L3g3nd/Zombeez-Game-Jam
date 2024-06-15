@@ -30,4 +30,7 @@ function getControls(){
 	}
 	//crouch
 	key_down=keyboard_check(vk_down);
+	
+	// Shoot
+	shoot = keyboard_check_pressed(ord("Z"));
 }

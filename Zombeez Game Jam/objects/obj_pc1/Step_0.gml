@@ -87,3 +87,13 @@
 	if (yspd > termVel){
 		yspd=termVel
 	}
+
+
+// Shooting code
+if(onGround and shoot){
+	var bullet = instance_create_layer(x+(image_xscale*18), y-(random_range(5, 6)), "Instances", obj_bullet);
+	with(bullet){
+		speed = obj_pc1.image_xscale*5;
+		direction = random_range(-2, 2)+0;
+	};
+};
