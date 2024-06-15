@@ -7,6 +7,12 @@ moveSpd=2;
 xspd=0;
 yspd=0;
 
-grv=0.3;
-termVel=4;
-jspd = -4.72;
+grv=0.5;
+termVel=6;
+
+jspd = -3.5;
+jumpMax=2;
+jumpCount=0;
+jumpHoldTimer=0;
+jumpHoldFrames=15;
+onGround=true;

@@ -25,8 +25,31 @@
 	yspd+=grv;
 
 //JUMP
-	if jumpKeyBuffered && place_meeting(x,y+1,obj_wall){
-		yspd=jspd;		
+	//reset jumpMax
+	if(onGround){
+		jumpCount=0;
+		jumpHoldTimer=0;
+	}
+	else{
+		if(jumpCount==0){
+			jumpCount=1;
+		}
+	}
+//Initiate Jump	
+	if (jumpKeyBuffered && jumpCount<jumpMax){
+		jumpKeyBuffered=false;
+		jumpKeyBufferTimer=0;
+		
+		jumpHoldTimer=jumpHoldFrames;
+		
+		//increase jump counter
+		jumpCount++;
+	}
+
+	//set Jump speed
+	if(jumpHoldTimer>0){
+		yspd=jspd;
+		jumpHoldTimer--;
 	}
 
 //y collision
@@ -38,9 +61,18 @@
 		}
 		yspd=0;
 	}
+	
+	
 	y+=yspd;
 
+//Check if player is on ground
+	if(yspd>=0 && place_meeting(x,y+1,obj_wall)){
+		onGround=true;
+	}
+	else{
+		onGround=false;
+	}
 //cap velocity
-if (yspd > termVel){
+	if (yspd > termVel){
 		yspd=termVel
-}
+	}

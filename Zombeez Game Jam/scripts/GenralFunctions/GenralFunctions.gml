@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function controlSetup(){
-	bufferTime=10;
+	bufferTime=5;
 	
 	jumpKeyBuffered=0;
 	jumpKeyBufferTimer=0;
