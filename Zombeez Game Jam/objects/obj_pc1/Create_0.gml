@@ -16,3 +16,8 @@ jumpCount=0;
 jumpHoldTimer=0;
 jumpHoldFrames=15;
 onGround=true;
+
+// Animation variables
+sprite_index = spr_pc1_standing_11;
+image_xscale = 1;
+image_speed = 0.4;

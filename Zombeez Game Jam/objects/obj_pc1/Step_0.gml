@@ -7,17 +7,24 @@
 //setting directions
 	moveDir=key_right-key_left;
 	xspd=moveDir* moveSpd;
- 
+	
+// Standing and running animation
+	if(moveDir != 0){
+		sprite_index = spr_pc1_running_11;
+		image_xscale = moveDir;
+	}else{
+		sprite_index = spr_pc1_standing_11;
+	};
  
 //collision
 	var _subPixel=0.5; 
 	if place_meeting(x+xspd,y,obj_wall){
 		var _pixelCheck=_subPixel*sign(xspd);
 		while(!place_meeting(x+_pixelCheck,y,obj_wall)){
-			x+=_pixelCheck
-		}
+			x+=_pixelCheck;
+		};
 		xspd=0;
-	}
+	};
 	x+=xspd;
 
 //y movement
@@ -71,6 +78,10 @@
 	}
 	else{
 		onGround=false;
+		
+		// Jump animation
+		sprite_index = spr_pc1_jmp;
+		image_index = 1;
 	}
 //cap velocity
 	if (yspd > termVel){
