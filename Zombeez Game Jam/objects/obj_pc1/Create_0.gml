@@ -5,6 +5,6 @@ moveSpd=2;
 xspd=0;
 yspd=0;
 
-grv=0.275;
+grv=0.3;
 termVel=4;
-jspd = -3.15;
+jspd = -4.72;
