@@ -17,6 +17,7 @@
     {"id":{"name":"tmp_ply_spr","path":"sprites/tmp_ply_spr/tmp_ply_spr.yy",},"order":8,},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":2,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":2,},
+    {"id":{"name":"GenralFunctions","path":"scripts/GenralFunctions/GenralFunctions.yy",},"order":0,},
     {"id":{"name":"spr_button_med","path":"sprites/spr_button_med/spr_button_med.yy",},"order":1,},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},"order":6,},
     {"id":{"name":"spr_button_lg","path":"sprites/spr_button_lg/spr_button_lg.yy",},"order":0,},

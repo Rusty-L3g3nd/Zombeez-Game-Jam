@@ -1,10 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //get inputs
-	key_left=keyboard_check(vk_left);
-	key_right=keyboard_check(vk_right);
-	key_jump=keyboard_check_pressed(vk_space);
-	key_down=keyboard_check(vk_down);
+	getControls()
 
 
 //setting directions
@@ -28,7 +25,7 @@
 	yspd+=grv;
 
 //JUMP
-	if key_jump && place_meeting(x,y+1,obj_wall){
+	if jumpKeyBuffered && place_meeting(x,y+1,obj_wall){
 		yspd=jspd;		
 	}
 
@@ -44,6 +41,6 @@
 	y+=yspd;
 
 //cap velocity
-//	if (yspd > terminal){
-//		yspd=terminal
-//	}
+if (yspd > termVel){
+		yspd=termVel
+}
