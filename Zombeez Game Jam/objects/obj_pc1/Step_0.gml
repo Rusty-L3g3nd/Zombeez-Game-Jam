@@ -6,8 +6,12 @@
 
 //setting directions
 	moveDir=key_right-key_left;
-	xspd=moveDir* moveSpd;
-	
+	if(!key_dash){
+		xspd=moveDir* moveSpd;
+	}	
+	else if(key_dash){
+		xspd=moveDir* dshSpd;
+	}
 // Standing and running animation
 	if(moveDir != 0){
 		sprite_index = spr_pc1_running_11;
@@ -15,13 +19,14 @@
 	}else{
 		sprite_index = spr_pc1_standing_11;
 	};
- 
+//horizontal movement
+
 //collision
 	var _subPixel=0.5; 
 	if place_meeting(x+xspd,y,obj_wall){
 		var _pixelCheck=_subPixel*sign(xspd);
 		while(!place_meeting(x+_pixelCheck,y,obj_wall)){
-			x+=_pixelCheck;
+ 			x+=_pixelCheck;
 		};
 		xspd=0;
 	};
@@ -49,10 +54,13 @@
 		
 		jumpHoldTimer=jumpHoldFrames;
 		
-		//increase jump counter
+		
 		jumpCount++;
 	}
-
+	
+	if(!key_jump){
+		jumpHoldTimer=0;
+	}
 	//set Jump speed
 	if(jumpHoldTimer>0){
 		yspd=jspd;
@@ -74,7 +82,7 @@
 
 //Check if player is on ground
 	if(yspd>=0 && place_meeting(x,y+1,obj_wall)){
-		onGround=true;
+		onGround=true; 
 	}
 	else{
 		onGround=false;

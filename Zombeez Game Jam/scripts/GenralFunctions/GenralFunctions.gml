@@ -6,6 +6,9 @@ function controlSetup(){
 	
 	jumpKeyBuffered=0;
 	jumpKeyBufferTimer=0;
+	
+	/*CoolDownTimer=5;
+	dashKeyCoolDownTimer=0;*/
 }
 
 function getControls(){
@@ -16,6 +19,9 @@ function getControls(){
 	//jumps
 	key_jump_pressed=keyboard_check_pressed(vk_space);
 	key_jump=keyboard_check(vk_space);
+	
+	//dash
+	key_dash=keyboard_check_pressed(vk_shift);
 	
 	//jump key buffering
 	if key_jump_pressed{
@@ -28,6 +34,15 @@ function getControls(){
 	}else{
 		jumpKeyBuffered=0;
 	}
+	
+	//dash key buffering
+	/*if key_dash{
+		dashKeyCoolDownTimer=CoolDownTimer;
+	}
+	if(dashKeyCoolDownTimer>0){
+		key_dash=0;	
+		dashKeyCoolDownTimer--;
+	}*/
 	//crouch
 	key_down=keyboard_check(vk_down);
 	
