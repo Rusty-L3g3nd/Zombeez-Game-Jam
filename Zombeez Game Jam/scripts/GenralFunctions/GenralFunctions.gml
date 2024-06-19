@@ -47,5 +47,35 @@ function getControls(){
 	key_down=keyboard_check(vk_down);
 	
 	// Shoot
-	shoot = keyboard_check_pressed(ord("Z"));
+	shootPressed = keyboard_check_pressed(ord("Z"));
+	shootHeld = keyboard_check(ord("Z"));
+}
+
+function bulletSpawner(playerX, playerY, playerXscale, timer){
+	switch(weapon){
+		case "Pistol":
+			if(shootPressed and timer<1){
+				// Spawn bullet
+				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
+				with(bullet){
+					/*angle = degtorad(random_range(88, 92) - (90*playerXscale));
+					xspd = lengthdir_x(15, angle)*playerXscale;
+					yspd = lengthdir_y(15, angle);*/
+					direction = (random_range(88, 92) - (90*playerXscale)); // Doesn't seem to be working for some reason
+					speed = playerXscale*15;
+					image_xscale = playerXscale*2;
+				};
+				
+				// Set timer to control rate of fire
+				alarm[0] = room_speed/5;
+			};
+		break;
+		
+		case "Uzi":
+			if(shootHeld){
+			
+			};
+		break;
+
+	};
 }

@@ -33,3 +33,8 @@ onGround=true;
 sprite_index = spr_pc1_standing_11;
 image_xscale = 1;
 image_speed = 0.4;
+
+// Shooting variables
+randomize();
+weapon = "Pistol";
+alarm[0] = 0;
