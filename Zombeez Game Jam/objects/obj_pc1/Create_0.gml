@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 controlSetup();
+characterChoice=1;
 //basic movement
 moveDir=0;
 moveSpd=2;
