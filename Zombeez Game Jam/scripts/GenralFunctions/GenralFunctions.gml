@@ -51,31 +51,53 @@ function getControls(){
 	shootHeld = keyboard_check(ord("Z"));
 }
 
+
+function bulletInit(){
+	bulletsShot = 0;
+	alarm[0] = 0;
+	bulletTimer = alarm[0];
+}
+
+
 function bulletSpawner(playerX, playerY, playerXscale, timer){
+	bulletTimer = timer;
 	switch(weapon){
 		case "Pistol":
-			if(shootPressed and timer<1){
+			if(shootPressed and bulletTimer<0){
 				// Spawn bullet
 				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
 				with(bullet){
-					/*angle = degtorad(random_range(88, 92) - (90*playerXscale));
-					xspd = lengthdir_x(15, angle)*playerXscale;
-					yspd = lengthdir_y(15, angle);*/
-					direction = (random_range(88, 92) - (90*playerXscale)); // Doesn't seem to be working for some reason
+					direction = (random_range(88, 92) - (90*playerXscale));
 					speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
 					image_xscale = playerXscale*2;
 				};
 				
 				// Set timer to control rate of fire
-				alarm[0] = room_speed/5;
+				bulletTimer = room_speed/5;
 			};
 		break;
 		
 		case "Uzi":
-			if(shootHeld){
-			
+			if(shootHeld or !(bulletsShot == 0)){
+			if(bulletTimer<0){
+				bulletsShot = bulletsShot + 1;
+				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
+				with(bullet){
+					direction = (random_range(89, 91) - (90*playerXscale));
+					speed = 15;
+					image_xscale = playerXscale*2;
+				};
+				
+				if(bulletsShot>2){ // Pause every three shots
+					bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
+					bulletsShot = 0;
+				}else{ // Pause between shots
+					bulletTimer = room_speed/7;
+				};
+			};
 			};
 		break;
 
 	};
+	return bulletTimer;
 }

@@ -101,5 +101,5 @@
 
 // Shooting code
 if(onGround){
-	bulletSpawner(x, y, image_xscale, alarm[0]);
+	alarm[0] = bulletSpawner(x, y, image_xscale, alarm[0]);
 };
