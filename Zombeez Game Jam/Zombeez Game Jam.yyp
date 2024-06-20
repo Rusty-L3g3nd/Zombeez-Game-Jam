@@ -33,6 +33,7 @@
     {"id":{"name":"GenralFunctions","path":"scripts/GenralFunctions/GenralFunctions.yy",},"order":0,},
     {"id":{"name":"spr_drone_static","path":"sprites/spr_drone_static/spr_drone_static.yy",},"order":0,},
     {"id":{"name":"spr_button_med","path":"sprites/spr_button_med/spr_button_med.yy",},"order":1,},
+    {"id":{"name":"AnimationChoice","path":"scripts/AnimationChoice/AnimationChoice.yy",},"order":1,},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},"order":6,},
     {"id":{"name":"spr_button_lg","path":"sprites/spr_button_lg/spr_button_lg.yy",},"order":0,},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":14,},
