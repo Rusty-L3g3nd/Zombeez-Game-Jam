@@ -62,7 +62,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					xspd = lengthdir_x(15, angle)*playerXscale;
 					yspd = lengthdir_y(15, angle);*/
 					direction = (random_range(88, 92) - (90*playerXscale)); // Doesn't seem to be working for some reason
-					speed = playerXscale*15;
+					speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
 					image_xscale = playerXscale*2;
 				};
 				
