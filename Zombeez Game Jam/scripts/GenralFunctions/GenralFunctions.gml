@@ -97,7 +97,42 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 			};
 		break;
-
+		
+		case "DB":
+			if(shootPressed and bulletTimer<0){
+				// Spawn bullet
+				dir = (random_range(88, 92) - (90*playerXscale));
+				for(i=0;i<2;i+=1){
+				var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
+				bullet.direction = dir;
+				with(bullet){
+					speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
+					image_xscale = playerXscale*2;
+				};
+				};
+				
+				// Set timer to control rate of fire
+				bulletTimer = room_speed/5;
+			};
+		break;
+		
+		case "Shotgun":
+			if(shootPressed and bulletTimer<0){
+				// Spawn bullet
+				for(i=0;i<3;i++){
+					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					bullet.direction = -5 + (5*i);
+					bullet.image_angle = bullet.direction;
+					with(bullet){
+						speed = 15*playerXscale;
+						image_xscale = playerXscale*2;
+					};
+				};
+				
+				// Set timer to control rate of fire
+				bulletTimer = room_speed/5;
+			};
+		break;
 	};
 	return bulletTimer;
 }
