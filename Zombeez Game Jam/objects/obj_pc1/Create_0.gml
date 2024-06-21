@@ -37,5 +37,5 @@ image_speed = 0.4;
 
 // Shooting variables
 randomize();
-weapon = "Shotgun";//"Pistol";
+weapon = "MG";//"Pistol"; // We have got Pistol, Uzi, DB, Shotgun, MG
 bulletInit();
