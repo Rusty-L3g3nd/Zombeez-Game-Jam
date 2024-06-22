@@ -230,6 +230,23 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		break;
 		
 		case "Super Shotgun": // Case 10 of 10
+			if(shootPressed and bulletTimer<0){
+				// Spawn bullet
+				for(i=0;i<3;i++){
+					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					bullet.direction = -5 + (5*i);
+					bullet.image_angle = bullet.direction;
+					with(bullet){
+						speed = 15*playerXscale;
+						image_xscale = 2;
+						alarm[0] = room_speed/4;
+					};
+				};
+				
+				// Set timer to control rate of fire
+				bulletTimer = room_speed/5;
+			};
+		break;
 	};
 	return bulletTimer;
 }
