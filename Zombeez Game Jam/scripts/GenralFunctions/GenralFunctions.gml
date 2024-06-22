@@ -126,7 +126,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					bullet.image_angle = bullet.direction;
 					with(bullet){
 						speed = 15*playerXscale;
-						image_xscale = playerXscale*2;
+						image_xscale = 2;
 					};
 				};
 				
@@ -193,11 +193,40 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		break;
 		
 		case "Quad Barrel": // Case 8 of 10
-		
+			if(shootPressed and bulletTimer<0){
+				// Spawn bullet
+				dir = (random_range(88, 92) - (90*playerXscale));
+				for(i=0;i<4;i+=1){
+					var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(2*i)), "Instances", obj_bullet);
+					bullet.direction = dir;
+					bullet.image_angle = dir;
+					with(bullet){
+						speed = 15;
+						image_xscale = image_xscale*2;
+					};
+				};
+				
+				// Set timer to control rate of fire
+				bulletTimer = room_speed/5;
+			};
 		break;
 		
 		case "DBSG": // Case 9 of 10
-		
+			if(shootPressed and bulletTimer<0){
+				// Spawn bullet
+				for(i=0;i<7;i++){
+					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					bullet.direction = -15 + (5*i);
+					bullet.image_angle = bullet.direction;
+					with(bullet){
+						speed = 15*playerXscale;
+						image_xscale = playerXscale*2;
+					};
+				};
+				
+				// Set timer to control rate of fire
+				bulletTimer = room_speed/5;
+			};
 		break;
 		
 		case "Super Shotgun": // Case 10 of 10
