@@ -59,15 +59,37 @@ function bulletInit(){
 }
 
 
+function bubble(xloc, yloc, alpha_start = 1, xscale_start, yscale_start, alpha_step, xscale_step, yscale_step, colour){
+	var bubble = instance_create_layer(xloc, yloc, "Instances", obj_vfx_bubble);
+	with(bubble){
+		image_alpha = alpha_start;
+		image_xscale = xscale_start;
+		image_yscale = yscale_start;
+		alpha_dec = alpha_step;
+		xscale_inc = xscale_step;
+		yscale_inc = yscale_step;
+		image_blend = colour;
+	};
+}
+
+
+function muzzleFlash(xloc, yloc, xscale, spriteName){
+	// Draw muzzle flash
+	var flash = instance_create_layer(xloc, yloc, "Instances", obj_muzzleflash);
+	flash.sprite_index = spriteName;
+	flash.image_xscale = xscale;
+}
+
+
 function bulletSpawner(playerX, playerY, playerXscale, timer){
 	bulletTimer = timer;
 	switch(weapon){
 		case "Pistol": // Case 1 of 10
 			if(shootPressed and bulletTimer<0){
-				// Draw muzzle flash
-				var flash = instance_create_layer(x, y, "Instances", obj_muzzleflash);
-				flash.sprite_index = spr_muzzleflash11;
-				flash.image_xscale = playerXscale;
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
 				with(bullet){
