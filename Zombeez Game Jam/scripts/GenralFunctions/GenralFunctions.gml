@@ -64,6 +64,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 	switch(weapon){
 		case "Pistol": // Case 1 of 10
 			if(shootPressed and bulletTimer<0){
+				// Draw muzzle flash
+				var flash = instance_create_layer(x, y, "Instances", obj_muzzleflash);
+				flash.sprite_index = spr_muzzleflash11;
+				flash.image_xscale = playerXscale;
 				// Spawn bullet
 				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
 				with(bullet){
