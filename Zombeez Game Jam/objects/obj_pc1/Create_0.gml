@@ -37,5 +37,5 @@ image_speed = 0.4;
 
 // Shooting variables
 randomize();
-weapon = "Super Shotgun";//"Pistol"; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG
+weapon = "Super Shotgun";//"Pistol"; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG, MGSG, Quad Barrel, DBSG, Super Shotgun
 bulletInit();

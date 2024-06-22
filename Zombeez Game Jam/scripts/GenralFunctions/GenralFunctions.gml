@@ -126,7 +126,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					bullet.image_angle = bullet.direction;
 					with(bullet){
 						speed = 15*playerXscale;
-						image_xscale = 2;
+						image_xscale = 2*playerXscale;
 					};
 				};
 				
@@ -238,7 +238,8 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					bullet.image_angle = bullet.direction;
 					with(bullet){
 						speed = 15*playerXscale;
-						image_xscale = 2;
+						image_xscale = 3*playerXscale;
+						image_yscale = 1.5;
 						alarm[0] = room_speed/4;
 					};
 				};
