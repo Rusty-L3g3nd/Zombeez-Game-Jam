@@ -93,7 +93,7 @@
 		// Jump animation
 		sprite_index = sprite_jumping;
 		image_index = 1;
-		jumpAnimationChoice(characterChoice);
+		//jumpAnimationChoice(characterChoice);
 	}
 //cap velocity
 	if (yspd > termVel){
