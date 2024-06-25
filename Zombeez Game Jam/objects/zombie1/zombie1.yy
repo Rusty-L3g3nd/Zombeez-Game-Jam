@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pc2",
+  "name": "zombie1",
   "spriteId": {
-    "name": "spr_pc2_standing21",
-    "path": "sprites/spr_pc2_standing21/spr_pc2_standing21.yy",
+    "name": "spr_zombie1_standing",
+    "path": "sprites/spr_zombie1_standing/spr_zombie1_standing.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_pc1",
-    "path": "objects/obj_pc1/obj_pc1.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PlayerObjects",
-    "path": "folders/Objects/PlayerObjects.yy",
+    "name": "enemyObjects",
+    "path": "folders/Objects/enemyObjects.yy",
   },
 }

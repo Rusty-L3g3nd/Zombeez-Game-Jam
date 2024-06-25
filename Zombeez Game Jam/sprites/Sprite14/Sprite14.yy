@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "spr_zombie1",
-    "path": "folders/Sprites/spr_zombie1.yy",
+    "path": "folders/Sprites/spr_zombies/spr_zombie1.yy",
   },
 }

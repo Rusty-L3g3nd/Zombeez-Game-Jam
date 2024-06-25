@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "spr_pc2_running",
-    "path": "folders/Sprites/spr_pc2/spr_pc2_running.yy",
+    "path": "folders/Sprites/spr_pc/spr_pc2/spr_pc2_running.yy",
   },
 }
