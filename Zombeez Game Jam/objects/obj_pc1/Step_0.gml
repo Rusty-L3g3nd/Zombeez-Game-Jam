@@ -13,13 +13,15 @@
 		xspd=moveDir* dshSpd;
 	}
 // Standing and running animation
-	/*if(moveDir != 0){
-		sprite_index = spr_pc1_running_11;
+	if(moveDir != 0){
+		sprite_index = sprite_running;
 		image_xscale = moveDir;
 	}else{
-		sprite_index = spr_pc1_standing_11;
-	};*/
-	movementAnimationChoice(characterChoice);
+		sprite_index = sprite_standing;
+	};
+	//movementAnimationChoice(characterChoice);
+	
+	
 //horizontal movement
 
 //collision
@@ -89,8 +91,8 @@
 		onGround=false;
 		
 		// Jump animation
-		/*sprite_index = spr_pc1_jmp;
-		image_index = 1;*/
+		sprite_index = sprite_jumping;
+		image_index = 1;
 		jumpAnimationChoice(characterChoice);
 	}
 //cap velocity

@@ -32,6 +32,10 @@ onGround=true;
 
 // Animation variables
 sprite_index = spr_pc1_standing_11;
+sprite_standing=spr_pc1_standing_11;
+sprite_running = spr_pc1_running_11;
+sprite_dying= spr_pc1_dying;
+sprite_jumping=spr_pc1_jmp;
 image_xscale = 1;
 image_speed = 0.4;
 
