@@ -134,7 +134,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					bullet.image_angle = dir;
 					with(bullet){
 						speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
-						image_xscale = playerXscale*2;
+						image_xscale = 2;//playerXscale*2;
 					};
 				};
 				
