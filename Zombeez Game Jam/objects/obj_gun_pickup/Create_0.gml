@@ -1,8 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-randomize();
+
 spriteList = [spr_uzi, spr_double_barrel, spr_shotgun];
-sprite_index = spriteList[irandom(2)];
-image_index = 0;
+randomize();
+weaponSelect = irandom(2);
+sprite_index = spriteList[weaponSelect];
+weaponList = ["Uzi", "DB", "Shotgun"];
 image_speed = 0;
+
+pickupTimer = 0;
