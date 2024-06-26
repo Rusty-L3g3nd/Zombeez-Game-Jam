@@ -4,38 +4,20 @@
 
 /// @description Insert description here
 // You can write your code in this editor
-//controlSetup();
-//characterChoice=1;
-//basic movement
-moveDir=0;
+
+moveDir=-1;
 moveSpd=2;
-//dshSpd=20;
-xspd=0;
+xspd=moveSpd*moveDir;
 yspd=0;
+grv=0.5
 
-//grav
-/*
-grv=0.5;
-termVel=6;
+//detection and attack range
+detectRadius=10;
+attackRadius=2;
 
-//jmp vals
-jspd = -3.5;
-jumpMax=2;
-jumpCount=0;
-
-jumpHoldTimer=0;
-jumpHoldFrames=18;
-*/
 
 onGround=true;
 
-//coyote time
-/*
-	coyoteHangFrames=2;
-	coyoteHangTimers=2;
-	coyoteJumpFrames=5;
-	coyoteJumpTimer=0;
-*/
 
 // Animation variables
 sprite_index = spr_pc1_standing_11;
