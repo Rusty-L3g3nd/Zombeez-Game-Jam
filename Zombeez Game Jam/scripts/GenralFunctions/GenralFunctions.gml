@@ -183,6 +183,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		case "DBMG": // Case 6 of 10
 			if(shootHeld){
 				if(bulletTimer<0){
+					bulletsShot += 1;
 					dir = (random_range(85, 95) - (90*playerXscale));
 					
 					for(i=0;i<2;i+=1){
@@ -193,7 +194,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						bullet.speed = 15;
 					};
 				
-				bulletTimer = room_speed/10;
+					//bulletTimer = room_speed/10;
+					if(bulletsShot>2){ // Pause every three shots
+						bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
+						bulletsShot = 0;
+					}else{ // Pause between shots
+						bulletTimer = room_speed/10;
+					};
 				};
 			};
 		break;
