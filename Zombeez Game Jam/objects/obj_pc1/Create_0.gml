@@ -40,6 +40,15 @@ image_xscale = 1;
 image_speed = 0.4;
 
 // Shooting variables
+slot1 = 0;
+slot2 = 0;
+weaponList = [
+["Pistol", "Uzi", "DB", "Shotgun"],
+["Uzi", "MG", "DBMG", "MGSG"],
+["DB", "DBMG", "Quad Barrel", "DBSG"],
+["Shotgun", "MGSG", "DBSG", "Super Shotgun"]
+];
+
 randomize();
-weapon = "Pistol"; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG, MGSG, Quad Barrel, DBSG, Super Shotgun
+weapon = weaponList[slot1][slot2]; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG, MGSG, Quad Barrel, DBSG, Super Shotgun
 bulletInit();
