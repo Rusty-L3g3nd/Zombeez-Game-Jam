@@ -21,6 +21,7 @@
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":0,},
     {"id":{"name":"spr_pc4_jmp","path":"sprites/spr_pc4_jmp/spr_pc4_jmp.yy",},"order":0,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":9,},
+    {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":9,},
     {"id":{"name":"spr_uzi_muzzleflash","path":"sprites/spr_uzi_muzzleflash/spr_uzi_muzzleflash.yy",},"order":1,},
     {"id":{"name":"spr_pc1_dying","path":"sprites/spr_pc1_dying/spr_pc1_dying.yy",},"order":4,},
     {"id":{"name":"spr_drone_flame","path":"sprites/spr_drone_flame/spr_drone_flame.yy",},"order":2,},
