@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 93,
-  "bbox_right": 105,
-  "bbox_top": 86,
-  "bbox_bottom": 92,
+  "bbox_left": 96,
+  "bbox_right": 110,
+  "bbox_top": 87,
+  "bbox_bottom": 94,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc361290-275e-4b33-9b1f-c863637e5850",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7729abca-d4ca-4554-84c8-f1d612f71f89",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd29cb07-74c2-4623-b0f2-24d1b62d3049",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28cf002e-5087-4ce1-952b-398399670f09",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6e8378ca-5487-46a0-a90a-6ae97479be9d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc361290-275e-4b33-9b1f-c863637e5850","path":"sprites/spr_pistol_muzzleflash/spr_pistol_muzzleflash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1ccdd318-ece3-4f6d-9995-f4242e429a36","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7729abca-d4ca-4554-84c8-f1d612f71f89","path":"sprites/spr_pistol_muzzleflash/spr_pistol_muzzleflash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e04704d8-4a06-4dd4-acb7-1dbc4e302942","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd29cb07-74c2-4623-b0f2-24d1b62d3049","path":"sprites/spr_pistol_muzzleflash/spr_pistol_muzzleflash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fee160d1-5b7b-4ff3-a997-bfd58493337b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28cf002e-5087-4ce1-952b-398399670f09","path":"sprites/spr_pistol_muzzleflash/spr_pistol_muzzleflash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,7 +66,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9de8e80a-e09b-4c65-bb47-df93b790a1cd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0194620a-66d3-485a-a9a8-b7145112bd7b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
