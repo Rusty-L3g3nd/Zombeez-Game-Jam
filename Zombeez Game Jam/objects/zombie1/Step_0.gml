@@ -47,7 +47,12 @@ yspd+=grv;
 	y+=yspd;
 
 
-if(inRadius){
+if(point_distance(x,y,obj_pc1.x,obj_pc1.y)<200 and point_direction(x,y,obj_pc1.x,obj_pc1.y)){
+		while(countDown>0){
+			sprite_index = sprite_standing;
+			countDown--;
+		}
+		direction = point_direction(x, y,obj_pc1.x,obj_pc1.y);
 
 }
 
