@@ -25,7 +25,6 @@
     {"id":{"name":"spr_pc4_jmp","path":"sprites/spr_pc4_jmp/spr_pc4_jmp.yy",},"order":0,},
     {"id":{"name":"spr_env_bushes","path":"sprites/spr_env_bushes/spr_env_bushes.yy",},"order":6,},
     {"id":{"name":"spr_zombie1_walking2","path":"sprites/spr_zombie1_walking2/spr_zombie1_walking2.yy",},"order":4,},
-
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":9,},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":9,},
     {"id":{"name":"Sprite61","path":"sprites/Sprite61/Sprite61.yy",},"order":9,},
