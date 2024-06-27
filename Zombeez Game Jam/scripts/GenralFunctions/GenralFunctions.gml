@@ -88,7 +88,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			if(shootPressed and bulletTimer<0){
 				// Muzzle flash
 				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 				// Spawn bullet
 				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
@@ -106,8 +106,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		case "Uzi": // Case 2 of 10
 			if(shootHeld or !(bulletsShot == 0)){
 			if(bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_uzi_muzzleflash);
+				bubble(playerX+(playerXscale*30), playerY-(random_range(4, 5)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+				// Spawn bullet
 				bulletsShot = bulletsShot + 1;
-				var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(5, 6)), "Instances", obj_bullet);
+				var bullet = instance_create_layer(playerX+(playerXscale*30), playerY-(random_range(4, 5)), "Instances", obj_bullet);
 				with(bullet){
 					direction = (random_range(89, 91) - (90*playerXscale));
 					speed = 15;
@@ -134,7 +139,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					bullet.image_angle = dir;
 					with(bullet){
 						speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
-						image_xscale = playerXscale*2;
+						image_xscale = 2;//playerXscale*2;
 					};
 				};
 				
@@ -178,6 +183,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		case "DBMG": // Case 6 of 10
 			if(shootHeld){
 				if(bulletTimer<0){
+					bulletsShot += 1;
 					dir = (random_range(85, 95) - (90*playerXscale));
 					
 					for(i=0;i<2;i+=1){
@@ -188,7 +194,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						bullet.speed = 15;
 					};
 				
-				bulletTimer = room_speed/10;
+					//bulletTimer = room_speed/10;
+					if(bulletsShot>2){ // Pause every three shots
+						bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
+						bulletsShot = 0;
+					}else{ // Pause between shots
+						bulletTimer = room_speed/10;
+					};
 				};
 			};
 		break;
