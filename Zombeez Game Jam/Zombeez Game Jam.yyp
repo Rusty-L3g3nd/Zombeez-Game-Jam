@@ -31,6 +31,7 @@
     {"id":{"name":"spr_lightpost1","path":"sprites/spr_lightpost1/spr_lightpost1.yy",},"order":0,},
     {"id":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"spr_weapon_slot","path":"sprites/spr_weapon_slot/spr_weapon_slot.yy",},"order":3,},
     {"id":{"name":"spr_pc1_running_11___","path":"sprites/spr_pc1_running_11___/spr_pc1_running_11___.yy",},"order":0,},
     {"id":{"name":"spr_pc1_standing_uzi","path":"sprites/spr_pc1_standing_uzi/spr_pc1_standing_uzi.yy",},"order":2,},
     {"id":{"name":"spr_double_barreled_shotgun","path":"sprites/spr_double_barreled_shotgun/spr_double_barreled_shotgun.yy",},"order":7,},
