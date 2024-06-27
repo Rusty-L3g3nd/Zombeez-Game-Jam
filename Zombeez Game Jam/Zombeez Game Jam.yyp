@@ -116,7 +116,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_lightposts","folderPath":"folders/Sprites/spr_lightposts.yy","order":16,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_London","folderPath":"folders/Sprites/spr_London.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_muzzleflash","folderPath":"folders/Sprites/spr_muzzleflash.yy","order":19,},
-
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc","folderPath":"folders/Sprites/spr_pc.yy","order":24,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc1","folderPath":"folders/Sprites/spr_pc/spr_pc1.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc1_running","folderPath":"folders/Sprites/spr_pc/spr_pc1/spr_pc1_running.yy","order":2,},
@@ -130,12 +129,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc4","folderPath":"folders/Sprites/spr_pc/spr_pc4.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc4_running","folderPath":"folders/Sprites/spr_pc/spr_pc4/spr_pc4_running.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc4_standing","folderPath":"folders/Sprites/spr_pc/spr_pc4/spr_pc4_standing.yy","order":1,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_sawblade","folderPath":"folders/Sprites/spr_sawblade.yy","order":17,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_ui","folderPath":"folders/Sprites/spr_ui.yy","order":13,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_buttons","folderPath":"folders/Sprites/spr_ui/spr_buttons.yy","order":0,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombies","folderPath":"folders/Sprites/spr_zombies.yy","order":25,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombie1","folderPath":"folders/Sprites/spr_zombies/spr_zombie1.yy","order":0,},
-
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc1","folderPath":"folders/Sprites/spr_pc1.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc1_running","folderPath":"folders/Sprites/spr_pc1/spr_pc1_running.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_pc1_standing","folderPath":"folders/Sprites/spr_pc1/spr_pc1_standing.yy","order":0,},
@@ -152,7 +145,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_ui","folderPath":"folders/Sprites/spr_ui.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_buttons","folderPath":"folders/Sprites/spr_ui/spr_buttons.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombie1","folderPath":"folders/Sprites/spr_zombie1.yy","order":5,},
-
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombies","folderPath":"folders/Sprites/spr_zombies.yy","order":25,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombie1","folderPath":"folders/Sprites/spr_zombies/spr_zombie1.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
   ],
