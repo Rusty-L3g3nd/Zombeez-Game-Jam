@@ -31,7 +31,6 @@
 	}
 	x+=xspd;
 	
-
 //y movement
 //Gravity
 yspd+=grv;
@@ -47,15 +46,10 @@ yspd+=grv;
 	}
 	y+=yspd;
 
-//Check if player is on ground
-	if(yspd>=0 && place_meeting(x,y+1,obj_wall)){
-		onGround=true; 
-	}
-	else{
-		onGround=false;
-	}
 
+if(inRadius){
 
+}
 
 
 
