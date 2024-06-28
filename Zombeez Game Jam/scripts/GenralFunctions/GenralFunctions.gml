@@ -194,10 +194,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				if(bulletTimer<0){
 					// Muzzle flash
 					muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-					bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+					bubble(playerX+(playerXscale*29), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 					// Spawn bullet
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(4, 7)), "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*29), playerY-(random_range(4, 7)), "Instances", obj_bullet);
 					with(bullet){
 						direction = (random_range(85, 95) - (90*playerXscale));
 						speed = 15;
@@ -213,14 +213,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				if(bulletTimer<0){
 					// Muzzle flash
 					muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-					bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+					bubble(playerX+(playerXscale*27), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 					// Spawn bullet
 					bulletsShot += 1;
 					dir = (random_range(85, 95) - (90*playerXscale));
 					
 					for(i=0;i<2;i+=1){
-						var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
+						var bullet = instance_create_layer(playerX+(playerXscale*27+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
 						bullet.direction = dir;
 						bullet.image_angle = dir;
 						bullet.image_xscale = 2;
@@ -244,13 +244,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			if(bulletTimer<0){
 				// Muzzle flash
 				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 				// Spawn bullet
 				bulletsShot = bulletsShot + 1;
 				
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY-5, "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -277,12 +277,12 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			if(shootPressed and bulletTimer<0){
 				// Muzzle flash
 				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				bubble(playerX+(playerXscale*36), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 				// Spawn bullet
 				dir = (random_range(88, 92) - (90*playerXscale));
 				for(i=0;i<4;i+=1){
-					var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(2*i)), "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*36+(i*6)), playerY-(5+(2*i)), "Instances", obj_bullet);
 					bullet.direction = dir;
 					bullet.image_angle = dir;
 					with(bullet){
@@ -300,11 +300,11 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			if(shootPressed and bulletTimer<0){
 				// Muzzle flash
 				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 				// Spawn bullet
 				for(i=0;i<7;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY-5, "Instances", obj_bullet);
 					bullet.direction = -15 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -326,11 +326,11 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			if(shootPressed and bulletTimer<0){
 				// Muzzle flash
 				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
-				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
 				
 				// Spawn bullet
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY-5, "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){

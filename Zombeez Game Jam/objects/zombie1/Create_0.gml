@@ -3,7 +3,7 @@
 
 enum states{
 	idle,
-	alert,
+	move,
 	follow,
 	attack
 }
