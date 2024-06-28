@@ -165,9 +165,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		
 		case "Shotgun": // Case 4 of 10
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*28), playerY-5, "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -185,9 +189,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "MG": // Case 5 of 10
+		case "MG": // Case 5 of 10 (spr_pc1_standing_mg)
 			if(shootHeld){
 				if(bulletTimer<0){
+					// Muzzle flash
+					muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+					bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+					// Spawn bullet
 					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(4, 7)), "Instances", obj_bullet);
 					with(bullet){
 						direction = (random_range(85, 95) - (90*playerXscale));
@@ -199,9 +208,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "DBMG": // Case 6 of 10
+		case "DBMG": // Case 6 of 10 (spr_pc1_standing_dbmg)
 			if(shootHeld){
 				if(bulletTimer<0){
+					// Muzzle flash
+					muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+					bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+					// Spawn bullet
 					bulletsShot += 1;
 					dir = (random_range(85, 95) - (90*playerXscale));
 					
@@ -225,9 +239,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "MGSG": // Case 7 of 10
+		case "MGSG": // Case 7 of 10 (spr_pc1_standing_supershotgun)
 			if(shootHeld or !(bulletsShot == 0)){
 			if(bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+				// Spawn bullet
 				bulletsShot = bulletsShot + 1;
 				
 				for(i=0;i<3;i++){
@@ -254,8 +273,12 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "Quad Barrel": // Case 8 of 10
+		case "Quad Barrel": // Case 8 of 10 (spr_pc1_standing_db)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				dir = (random_range(88, 92) - (90*playerXscale));
 				for(i=0;i<4;i+=1){
@@ -273,8 +296,12 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "DBSG": // Case 9 of 10
+		case "DBSG": // Case 9 of 10 (spr_pc1_standing_supershotgun)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<7;i++){
 					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
@@ -295,8 +322,12 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "Super Shotgun": // Case 10 of 10
+		case "Super Shotgun": // Case 10 of 10 (spr_pc1_standing_supershotgun)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<3;i++){
 					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
