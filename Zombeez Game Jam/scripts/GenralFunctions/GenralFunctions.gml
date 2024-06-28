@@ -427,6 +427,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				bulletTimer = room_speed/5;
 			};
 		break;
-	};
+	
 	return bulletTimer;
+			}
 }
