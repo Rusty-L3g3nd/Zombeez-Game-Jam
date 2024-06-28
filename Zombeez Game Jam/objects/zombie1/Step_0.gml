@@ -1,5 +1,6 @@
 // Standing and running animation
-	xspd=moveDir*moveSpd
+	if(!countDown)
+		xspd=moveDir*moveSpd
 	
 	if(moveDir != 0){
 		sprite_index = sprite_walking;
@@ -47,13 +48,17 @@ yspd+=grv;
 	y+=yspd;
 
 
-if(point_distance(x,y,obj_pc1.x,obj_pc1.y)<200 and point_direction(x,y,obj_pc1.x,obj_pc1.y)){
-		while(countDown>0){
-			sprite_index = sprite_standing;
-			countDown--;
-		}
-		direction = point_direction(x, y,obj_pc1.x,obj_pc1.y);
-
+if(point_distance(x,y,obj_pc1.x,obj_pc1.y)<200 and !detectedOnce){
+		sprite_index=sprite_standing;
+		if(countDown<=0)
+			xspd=0;
+			countDown=60;
+			detectedOnce=true;
+		countDown--;
+}
+else{
+	xspd=moveDir*moveSpd;
+	detectedOnce=false;
 }
 
 
