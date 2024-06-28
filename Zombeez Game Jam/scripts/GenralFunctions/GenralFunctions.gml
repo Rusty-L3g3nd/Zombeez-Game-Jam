@@ -142,10 +142,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		
 		case "DB": // Case 3 of 10
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_pistol_muzzleflash);
+				bubble(playerX+(playerXscale*33), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				dir = (random_range(88, 92) - (90*playerXscale));
 				for(i=0;i<2;i+=1){
-					var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*33+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
 					bullet.direction = dir;
 					bullet.image_angle = dir;
 					with(bullet){

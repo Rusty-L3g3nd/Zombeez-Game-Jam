@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_pc1",
   "spriteId": {
-    "name": "spr_pc1_standing_12",
-    "path": "sprites/spr_pc1_standing_12/spr_pc1_standing_12.yy",
+    "name": "spr_pc1_standing_pistol",
+    "path": "sprites/spr_pc1_standing_pistol/spr_pc1_standing_pistol.yy",
   },
   "solid": false,
   "visible": true,

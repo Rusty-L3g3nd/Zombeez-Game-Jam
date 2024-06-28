@@ -31,9 +31,9 @@ onGround=true;
 
 
 // Animation variables
-sprite_index = spr_pc1_standing_12;
-sprite_standing=spr_pc1_standing_12;
-sprite_running = spr_pc1_running_11;
+sprite_index = spr_pc1_standing_pistol;
+sprite_standing=spr_pc1_standing_pistol;
+sprite_running = spr_pc1_running_pistol;
 sprite_dying= spr_pc1_dying;
 sprite_jumping=spr_pc1_jmp;
 image_xscale = 1;
