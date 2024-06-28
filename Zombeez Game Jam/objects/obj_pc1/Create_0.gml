@@ -31,9 +31,9 @@ onGround=true;
 
 
 // Animation variables
-sprite_index = spr_pc1_standing_12;
-sprite_standing=spr_pc1_standing_12;
-sprite_running = spr_pc1_running_11;
+sprite_index = spr_pc1_standing_pistol;
+sprite_standing=spr_pc1_standing_pistol;
+sprite_running = spr_pc1_running_pistol;
 sprite_dying= spr_pc1_dying;
 sprite_jumping=spr_pc1_jmp;
 image_xscale = 1;
@@ -48,6 +48,8 @@ weaponList = [
 ["DB", "DBMG", "Quad Barrel", "DBSG"],
 ["Shotgun", "MGSG", "DBSG", "Super Shotgun"]
 ];
+
+recoil = 0;
 
 randomize();
 weapon = weaponList[slot1][slot2]; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG, MGSG, Quad Barrel, DBSG, Super Shotgun

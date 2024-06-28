@@ -9,6 +9,8 @@ if(instance_exists(obj_pc1)){
 			obj_pc1.slot1 = weaponSelect+1;
 			with(obj_pc1){
 				weapon = weaponList[slot1][slot2];
+				sprite_standing = standAnim(, slot1, slot2);
+				sprite_running = runAnim(, slot1, slot2);
 			};
 			instance_destroy(self);
 		};
@@ -17,6 +19,8 @@ if(instance_exists(obj_pc1)){
 			obj_pc1.slot2 = weaponSelect+1;
 			with(obj_pc1){
 				weapon = weaponList[slot1][slot2];
+				sprite_standing = standAnim(, slot1, slot2);
+				sprite_running = runAnim(, slot1, slot2);
 			};
 			instance_destroy(self);
 		};
