@@ -87,6 +87,11 @@ function knockBack(Xamt = 3, Yamt = 0){
 };
 
 
+function cameraRecoil(amt = 4){
+	obj_camera.recoil = amt;
+}
+
+
 function bulletSpawner(playerX, playerY, playerXscale, timer){
 	bulletTimer = timer;
 	switch(weapon){
@@ -169,6 +174,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				
 				// Knockback
 				knockBack();
+				cameraRecoil();
 				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
@@ -232,6 +238,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				
 				// Knockback
 				knockBack();
+				cameraRecoil();
 				
 				if(bulletsShot>2){ // Pause every three shots
 					bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
@@ -277,7 +284,8 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				
 				// Knockback
 				knockBack(5, 1);
-					
+				cameraRecoil(5);
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
@@ -300,6 +308,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 				
 				// Knockback
 				knockBack(7, 2);
+				cameraRecoil(7);
 				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
