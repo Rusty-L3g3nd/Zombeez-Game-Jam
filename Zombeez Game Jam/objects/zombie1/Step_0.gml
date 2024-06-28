@@ -49,19 +49,18 @@ yspd+=1;
 
 
 if state== states.idle{
-	
-	if((obj_pc1.x-x)*sign(obj_pc1.x-x) < detectRadius and (obj_pc1.y-y)*sign(obj_pc1.y-y) < 50){
+	moveDir=0;
+	if(distance_to_object(obj_pc1) < detectRadius){
 		state=states.follow;
 	}
 	
 }
 if(state == states.follow){
 	moveDir=sign(obj_pc1.x-x);
-	if((obj_pc1.x-x)*sign(obj_pc1.x-x) > detectRadius){
+	if(distance_to_object(obj_pc1) > detectRadius){
 		state=states.idle;
-		countDown=60
 	}
-	else if((obj_pc1.x-x)*sign(obj_pc1.x-x) < attackRadius){
+	else if(distance_to_object(obj_pc1) < attackRadius){
 		state=states.attack;
 	}
 }
@@ -69,7 +68,9 @@ if(state == states.follow){
 if(state==states.attack){
 	moveDir=0;
 	sprite_index=sprite_atk;
-	if((obj_pc1.x-x)*sign(obj_pc1.x-x) > attackRadius){
+	if(distance_to_object(obj_pc1) > attackRadius){
+		
+		//x+=200;
 		state=states.idle;
 	}
 }
