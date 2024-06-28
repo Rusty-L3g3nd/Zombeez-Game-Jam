@@ -34,6 +34,14 @@
 		xspd=0;
 	};
 	x+=xspd;
+	
+// Recoil knockback
+if(recoil){
+	if(!place_meeting(x-(recoil*image_xscale), y, obj_wall)){
+		x -= recoil*image_xscale;
+		recoil -= 1;
+	};
+};
 
 //y movement
 //Gravity

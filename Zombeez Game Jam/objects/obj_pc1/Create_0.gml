@@ -49,6 +49,8 @@ weaponList = [
 ["Shotgun", "MGSG", "DBSG", "Super Shotgun"]
 ];
 
+recoil = 0;
+
 randomize();
 weapon = weaponList[slot1][slot2]; // We have got Pistol, Uzi, DB, Shotgun, MG, DBMG, MGSG, Quad Barrel, DBSG, Super Shotgun
 bulletInit();

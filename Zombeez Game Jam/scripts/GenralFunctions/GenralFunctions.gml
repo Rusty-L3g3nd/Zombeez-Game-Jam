@@ -81,6 +81,17 @@ function muzzleFlash(xloc, yloc, xscale, spriteName){
 }
 
 
+function knockBack(Xamt = 3, Yamt = 0){
+	obj_pc1.recoil = Xamt;
+	obj_pc1.y -= Yamt;
+};
+
+
+function cameraRecoil(amt = 4){
+	obj_camera.recoil = amt;
+}
+
+
 function bulletSpawner(playerX, playerY, playerXscale, timer){
 	bulletTimer = timer;
 	switch(weapon){
@@ -161,6 +172,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack();
+				cameraRecoil();
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
@@ -193,6 +208,7 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						bullet.image_xscale = 2;
 						bullet.speed = 15;
 					};
+	
 				
 					//bulletTimer = room_speed/10;
 					if(bulletsShot>2){ // Pause every three shots
@@ -219,6 +235,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						image_xscale = playerXscale*2;
 					};
 				};
+				
+				// Knockback
+				knockBack();
+				cameraRecoil();
 				
 				if(bulletsShot>2){ // Pause every three shots
 					bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
@@ -262,6 +282,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack(5, 1);
+				cameraRecoil(5);
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
@@ -281,6 +305,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						alarm[0] = room_speed/4;
 					};
 				};
+				
+				// Knockback
+				knockBack(7, 2);
+				cameraRecoil(7);
 				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
