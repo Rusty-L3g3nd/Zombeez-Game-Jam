@@ -1,6 +1,4 @@
-// Standing and running animation
-	if(!countDown)
-		xspd=moveDir*moveSpd
+xspd=moveDir*moveSpd
 	
 	if(moveDir != 0){
 		sprite_index = sprite_walking;
@@ -15,26 +13,27 @@
 	var _subPixel=0.5; 
 	if place_meeting(x+xspd,y,obj_wall){
 		var _pixelCheck=_subPixel*sign(xspd);
-		while(!place_meeting(x+_pixelCheck,y,obj_wall)){
+		while(!place_meeting(x-_pixelCheck,y,obj_wall)){
  			x+=_pixelCheck;
 		};
 		xspd=0;
 		moveDir*=-1;
 	};
-	var _subPixel=1;
-	if(!place_meeting(x+xspd*2,y+0.5,obj_wall)){
+	var _subPixel=2;
+	if(!place_meeting(x+xspd,y+0.5,obj_wall)){
 		var _pixelCheck=_subPixel*sign(xspd);
 		while(place_meeting(x+_pixelCheck,y+0.5,obj_wall)){
  			x+=_pixelCheck;
 		};
 		xspd=0;
-		moveDir*=-1;
+		sprite_index=sprite_standing;
 	}
 	x+=xspd;
 	
 //y movement
 //Gravity
-yspd+=grv;
+
+yspd+=1;
 
 //y collision
 	var _subPixel=0.5; 
@@ -48,25 +47,29 @@ yspd+=grv;
 	y+=yspd;
 
 
-if(point_distance(x,y,obj_pc1.x,obj_pc1.y)<200 and !detectedOnce){
-		sprite_index=sprite_standing;
-		if(countDown<=0)
-			xspd=0;
-			countDown=60;
-			detectedOnce=true;
-		countDown--;
+
+if state== states.idle{
+	
+	if((obj_pc1.x-x)*sign(obj_pc1.x-x) < detectRadius and (obj_pc1.y-y)*sign(obj_pc1.y-y) < 50){
+		state=states.follow;
+	}
+	
 }
-else{
-	xspd=moveDir*moveSpd;
-	detectedOnce=false;
+if(state == states.follow){
+	moveDir=sign(obj_pc1.x-x);
+	if((obj_pc1.x-x)*sign(obj_pc1.x-x) > detectRadius){
+		state=states.idle;
+		countDown=60
+	}
+	else if((obj_pc1.x-x)*sign(obj_pc1.x-x) < attackRadius){
+		state=states.attack;
+	}
 }
 
-
-
-// Shooting code
-/*
-if(onGround){
-	alarm[0] = bulletSpawner(x, y, image_xscale, alarm[0]);
-};
-*/
-
+if(state==states.attack){
+	moveDir=0;
+	sprite_index=sprite_atk;
+	if((obj_pc1.x-x)*sign(obj_pc1.x-x) > attackRadius){
+		state=states.idle;
+	}
+}
