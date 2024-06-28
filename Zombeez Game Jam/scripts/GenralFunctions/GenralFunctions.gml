@@ -81,6 +81,17 @@ function muzzleFlash(xloc, yloc, xscale, spriteName){
 }
 
 
+function knockBack(Xamt = 3, Yamt = 0){
+	obj_pc1.recoil = Xamt;
+	obj_pc1.y -= Yamt;
+};
+
+
+function cameraRecoil(amt = 4){
+	obj_camera.recoil = amt;
+}
+
+
 function bulletSpawner(playerX, playerY, playerXscale, timer){
 	bulletTimer = timer;
 	switch(weapon){
@@ -97,6 +108,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					speed = 15; //playerXscale*15; multiplying with playerXscale will set velocity direction, conflicting with the above direction code
 					image_xscale = playerXscale*2;
 				};
+				
+				// Knockback
+				knockBack(1);
+				cameraRecoil(2);
 				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
@@ -119,6 +134,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					image_xscale = playerXscale*2;
 				};
 				
+				// Knockback
+				knockBack(1);
+				cameraRecoil(2);
+				
 				if(bulletsShot>2){ // Pause every three shots
 					bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
 					bulletsShot = 0;
@@ -131,10 +150,14 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		
 		case "DB": // Case 3 of 10
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_db_muzzleflash);
+				bubble(playerX+(playerXscale*35), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				dir = (random_range(88, 92) - (90*playerXscale));
 				for(i=0;i<2;i+=1){
-					var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*35+(i*6)), playerY-(6+(2*i)), "Instances", obj_bullet);
 					bullet.direction = dir;
 					bullet.image_angle = dir;
 					with(bullet){
@@ -143,6 +166,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack(2);
+				cameraRecoil(3);
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
@@ -150,9 +177,13 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 		
 		case "Shotgun": // Case 4 of 10
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_shotgun_muzzleflash);
+				bubble(playerX+(playerXscale*28), playerY+(random_range(-1, 2)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*28), playerY+(random_range(-1, 2)), "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -161,39 +192,63 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack();
+				cameraRecoil();
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
 		break;
 		
-		case "MG": // Case 5 of 10
+		case "MG": // Case 5 of 10 (spr_pc1_standing_mg)
 			if(shootHeld){
 				if(bulletTimer<0){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-(random_range(4, 7)), "Instances", obj_bullet);
+					// Muzzle flash
+					muzzleFlash(playerX, playerY, playerXscale, spr_mg_muzzleflash);
+					bubble(playerX+(playerXscale*31), playerY+(random_range(0, 4)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+					// Spawn bullet
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY+(random_range(0, 4)), "Instances", obj_bullet);
 					with(bullet){
 						direction = (random_range(85, 95) - (90*playerXscale));
 						speed = 15;
 						image_xscale = playerXscale*2;
 					};
+					
+				// Knockback
+				knockBack(2);
+				cameraRecoil(3);
+				
+				
 				bulletTimer = room_speed/10;
 				};
 			};
 		break;
 		
-		case "DBMG": // Case 6 of 10
+		case "DBMG": // Case 6 of 10 (spr_pc1_standing_dbmg)
 			if(shootHeld){
 				if(bulletTimer<0){
+					// Muzzle flash
+					muzzleFlash(playerX, playerY, playerXscale, spr_dbmg_muzzleflash);
+					bubble(playerX+(playerXscale*30), playerY+(random_range(2, 4)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+					// Spawn bullet
 					bulletsShot += 1;
 					dir = (random_range(85, 95) - (90*playerXscale));
 					
 					for(i=0;i<2;i+=1){
-						var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(4*i)), "Instances", obj_bullet);
+						var bullet = instance_create_layer(playerX+(playerXscale*30+(i*6)), playerY+(2+(i*2)), "Instances", obj_bullet);
 						bullet.direction = dir;
 						bullet.image_angle = dir;
 						bullet.image_xscale = 2;
 						bullet.speed = 15;
 					};
-				
+	
+					// Knockback
+					knockBack(2);
+					cameraRecoil(2);
+					
 					//bulletTimer = room_speed/10;
 					if(bulletsShot>2){ // Pause every three shots
 						bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
@@ -205,13 +260,18 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "MGSG": // Case 7 of 10
+		case "MGSG": // Case 7 of 10 (spr_pc1_standing_supershotgun)
 			if(shootHeld or !(bulletsShot == 0)){
 			if(bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_supershotgun_muzzleflash);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(-1, 1)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
+				// Spawn bullet
 				bulletsShot = bulletsShot + 1;
 				
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY+(random_range(-1, 1)), "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -219,6 +279,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						image_xscale = playerXscale*2;
 					};
 				};
+				
+				// Knockback
+				knockBack();
+				cameraRecoil();
 				
 				if(bulletsShot>2){ // Pause every three shots
 					bulletTimer = room_speed/2;//alarm[0] = room_speed/2;
@@ -230,12 +294,16 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 			};
 		break;
 		
-		case "Quad Barrel": // Case 8 of 10
+		case "Quad Barrel": // Case 8 of 10 (spr_pc1_standing_db)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_db_muzzleflash);
+				bubble(playerX+(playerXscale*35), playerY-(random_range(5, 6)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				dir = (random_range(88, 92) - (90*playerXscale));
 				for(i=0;i<4;i+=1){
-					var bullet = instance_create_layer(playerX+(playerXscale*18+(i*6)), playerY-(5+(2*i)), "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*35+(i*6)), playerY-(6+(i)), "Instances", obj_bullet);
 					bullet.direction = dir;
 					bullet.image_angle = dir;
 					with(bullet){
@@ -244,16 +312,24 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack();
+				cameraRecoil();
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
 		break;
 		
-		case "DBSG": // Case 9 of 10
+		case "DBSG": // Case 9 of 10 (spr_pc1_standing_supershotgun)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_supershotgun_muzzleflash);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(-1, 1)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<7;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY+(random_range(-1, 1)), "Instances", obj_bullet);
 					bullet.direction = -15 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -262,16 +338,24 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 					};
 				};
 				
+				// Knockback
+				knockBack(5, 1);
+				cameraRecoil(5);
+				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
 			};
 		break;
 		
-		case "Super Shotgun": // Case 10 of 10
+		case "Super Shotgun": // Case 10 of 10 (spr_pc1_standing_supershotgun)
 			if(shootPressed and bulletTimer<0){
+				// Muzzle flash
+				muzzleFlash(playerX, playerY, playerXscale, spr_supershotgun_muzzleflash);
+				bubble(playerX+(playerXscale*31), playerY-(random_range(-1, 1)), 1, 0.002, 0.01, 0.1, 0.002, 0.01, c_yellow);
+				
 				// Spawn bullet
 				for(i=0;i<3;i++){
-					var bullet = instance_create_layer(playerX+(playerXscale*18), playerY-5, "Instances", obj_bullet);
+					var bullet = instance_create_layer(playerX+(playerXscale*31), playerY+(random_range(-1, 1)), "Instances", obj_bullet);
 					bullet.direction = -5 + (5*i);
 					bullet.image_angle = bullet.direction;
 					with(bullet){
@@ -281,6 +365,10 @@ function bulletSpawner(playerX, playerY, playerXscale, timer){
 						alarm[0] = room_speed/4;
 					};
 				};
+				
+				// Knockback
+				knockBack(7, 2);
+				cameraRecoil(7);
 				
 				// Set timer to control rate of fire
 				bulletTimer = room_speed/5;
