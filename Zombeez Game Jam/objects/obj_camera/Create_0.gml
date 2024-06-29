@@ -5,4 +5,5 @@
 window_set_fullscreen(1);
 y = obj_pc1.y;
 recoil = 0;
+yrecoil = 0;
 screen_width = 640
