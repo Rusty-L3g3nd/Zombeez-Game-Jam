@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "spr_London",
-    "path": "folders/Sprites/spr_London.yy",
+    "path": "folders/Sprites/spr_lvls/spr_London.yy",
   },
 }

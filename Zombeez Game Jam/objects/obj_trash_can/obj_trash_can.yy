@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_trash_can",
   "spriteId": {
-    "name": "TrashCan",
-    "path": "sprites/TrashCan/TrashCan.yy",
+    "name": "spr_bin",
+    "path": "sprites/spr_bin/spr_bin.yy",
   },
   "solid": false,
   "visible": true,

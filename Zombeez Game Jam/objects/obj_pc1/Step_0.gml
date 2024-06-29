@@ -115,8 +115,6 @@ if(yspd){
 //cap velocity
 	if (yspd > termVel){
 		yspd=termVel;
-		image_xscale = 0.8;
-		image_yscale = 1.2;
 	};
 
 

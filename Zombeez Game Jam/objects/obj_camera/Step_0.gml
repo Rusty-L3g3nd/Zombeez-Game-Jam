@@ -9,4 +9,10 @@ if(instance_exists(obj_pc1)){
 		x -= recoil*obj_pc1.image_xscale;
 		recoil -= 1;
 	};
+	
+	y = lerp(y, obj_pc1.y, 0.1);
+	if(yrecoil){
+		y -= yrecoil;
+		yrecoil -= 1;
+	};
 };

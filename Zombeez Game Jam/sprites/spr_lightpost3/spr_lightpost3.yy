@@ -71,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "spr_lightposts",
-    "path": "folders/Sprites/spr_lightposts.yy",
+    "path": "folders/Sprites/spr_lvls/spr_props/spr_breakables/spr_lightposts.yy",
   },
 }
