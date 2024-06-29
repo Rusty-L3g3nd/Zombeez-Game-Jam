@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//with(other){
-//	hp--;
-//	flash=3;
-//}
+with(other){
+	hitFrom=other.direction;
+	hp--;
+	flash=3;
+}
 
-//instance_destroy();
+instance_destroy();
