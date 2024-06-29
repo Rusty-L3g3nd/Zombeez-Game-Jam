@@ -38,6 +38,10 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sprite_standing","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"spr_zombie2_standing",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sprite_atk","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"spr_zombie2_atk",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sprite_index","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"spr_zombie2_standing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"countDown","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"60",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"attackRadius","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"6",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveSpd","path":"objects/zombie1/zombie1.yy",},"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"value":"1.25",},
   ],
   "parent": {
     "name": "enemyObjects",
