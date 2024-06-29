@@ -65,7 +65,7 @@ if(recoil){
 		
 		jumpHoldTimer=jumpHoldFrames;
 		
-		
+
 		jumpCount++;
 	}
 	
@@ -76,17 +76,26 @@ if(recoil){
 	if(jumpHoldTimer>0){
 		yspd=jspd;
 		jumpHoldTimer--;
-	}
+	};
+
+
+// Landing juice
+if(yspd){
+	if(place_meeting(x, y+yspd, obj_wall)){
+		image_yscale = 0.8;
+		image_xscale = sign(image_xscale)*1.2;
+	};
+};
 
 //y collision
 	var _subPixel=0.5; 
 	if place_meeting(x,y+yspd,obj_wall){
 		var _pixelCheck=_subPixel*sign(yspd);
 		while(!place_meeting(x,y+_pixelCheck,obj_wall)){
-			y+=_pixelCheck
-		}
+			y+=_pixelCheck;
+		};
 		yspd=0;
-	}
+	};
 	
 	
 	y+=yspd;
@@ -102,14 +111,23 @@ if(recoil){
 		sprite_index = sprite_jumping;
 		image_index = 1;
 		//jumpAnimationChoice(characterChoice);
-	}
+	};
 //cap velocity
 	if (yspd > termVel){
-		yspd=termVel
-	}
+		yspd=termVel;
+		image_xscale = 0.8;
+		image_yscale = 1.2;
+	};
 
 
 // Shooting code
 if(onGround){
 	alarm[0] = bulletSpawner(x, y, image_xscale, alarm[0]);
+	if(image_yscale != 1){
+		y += ceil((sprite_height*image_yscale)-(sprite_height*(image_yscale+0.1)))/2;
+		image_yscale += 0.1;
+	};
+	if(image_xscale != (1*sign(image_xscale))){
+		image_xscale = lerp(image_xscale, 1*sign(image_xscale), 0.1);
+	};
 };
