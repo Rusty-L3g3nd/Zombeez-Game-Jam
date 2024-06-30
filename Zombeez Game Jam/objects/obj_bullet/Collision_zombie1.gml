@@ -4,7 +4,7 @@
 if(other.hp>0){
 with(other){
 	if(hp>0){
-		hitFrom=sign(other.image_xscale)*-1;
+		hitFrom=sign(obj_pc1.x - x);
 		hp -= 1;
 		flash=3;
 		recoil = irandom_range(-hitFrom*3, -hitFrom*7);

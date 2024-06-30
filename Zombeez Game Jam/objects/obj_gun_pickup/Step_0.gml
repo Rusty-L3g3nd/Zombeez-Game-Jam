@@ -29,3 +29,7 @@ if(instance_exists(obj_pc1)){
 	};
 };
 
+if(!place_meeting(x, y+2, obj_wall)){
+	y += 2;
+};
+
