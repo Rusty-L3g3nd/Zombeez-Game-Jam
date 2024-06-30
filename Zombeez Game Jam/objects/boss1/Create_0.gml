@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 
-state=states.idle;
 
-recoil = 0;
+
+// Inherit the parent event
+event_inherited();
+
