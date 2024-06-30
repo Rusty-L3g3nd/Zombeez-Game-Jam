@@ -15,6 +15,7 @@
     {"id":{"name":"spr_building3","path":"sprites/spr_building3/spr_building3.yy",},"order":5,},
     {"id":{"name":"spr_vfx_bubble","path":"sprites/spr_vfx_bubble/spr_vfx_bubble.yy",},"order":20,},
     {"id":{"name":"SprWall","path":"sprites/SprWall/SprWall.yy",},"order":7,},
+    {"id":{"name":"obj_platforms","path":"objects/obj_platforms/obj_platforms.yy",},"order":4,},
     {"id":{"name":"spr_pc1_running_shotgun","path":"sprites/spr_pc1_running_shotgun/spr_pc1_running_shotgun.yy",},"order":4,},
     {"id":{"name":"spr_lightpost2","path":"sprites/spr_lightpost2/spr_lightpost2.yy",},"order":1,},
     {"id":{"name":"spr_crate2","path":"sprites/spr_crate2/spr_crate2.yy",},"order":1,},
