@@ -9,6 +9,7 @@ with(other){
 	if(hp>-1){
 		hp -= 1;
 		if(hp < 0){
+			instance_create_layer(x, y - random(8), "Instances1", obj_gun_pickup);
 			col = c_grey;
 			var limit = irandom_range(3, 7);
 			for(i=0;i<limit;i+=1){
