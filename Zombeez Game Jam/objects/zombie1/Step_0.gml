@@ -16,9 +16,9 @@ if(hp<=0){
 	countDown--;
 }else{
 	
-	if(recoil){
-		x -= recoil*sign(image_xscale);
-		recoil -= 1;
+	if(recoil != 0){
+		x += recoil;
+		recoil -= sign(recoil);
 	};
 	
 	xspd=moveDir*moveSpd

@@ -4,10 +4,10 @@
 if(other.hp>0){
 with(other){
 	if(hp>0){
-		hitFrom=other.direction;
+		hitFrom=sign(other.image_xscale)*-1;
 		hp -= 1;
 		flash=3;
-		recoil = irandom_range(3, 7);
+		recoil = irandom_range(-hitFrom*3, -hitFrom*7);
 	}else{
 		state = states.dying;
 		image_xscale = abs(image_xscale) * sign(other.image_xscale);
