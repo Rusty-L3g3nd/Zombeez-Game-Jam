@@ -15,7 +15,6 @@ if(state == states.attack){
 if(state == states.dying){
 	image_speed = 0;
 	image_index = image_number-1;
-	audio_play_sound(zombie_boss_death,0,false);
 };
 
 alarm[0] = room_speed * 10;

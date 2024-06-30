@@ -3,6 +3,7 @@ if(hp<=0){
 		sprite_index=sprite_dying;
 		image_speed = 1.5;
 		state = states.dying;
+		audio_play_sound(zombie_boss_death,0,false);
 	};
 	
 	//if(ev_animation_end){
