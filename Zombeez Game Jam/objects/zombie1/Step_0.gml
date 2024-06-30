@@ -69,10 +69,12 @@ if(hp<=0){
 	if state== states.idle{
 		moveDir=0;
 		if(distance_to_object(obj_pc1) < detectRadius){
-			state=states.follow;
+			if((obj_pc1.y-y)*(obj_pc1.y-y) < 65  ){
+				state=states.follow;
+			}
 		}
-	
 	}
+
 	if(state == states.follow){
 		if(!place_empty(x+xspd,y,obj_wall)){
 			state=states.idle;
