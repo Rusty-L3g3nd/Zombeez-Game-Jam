@@ -96,6 +96,12 @@ if(hp<=0){
 		if(distance_to_object(obj_pc1) > attackRadius){
 			state=states.idle;
 		}
+		if(obj_pc1.hp>0){
+			obj_pc1.hp--;
+		}
+		else{
+			obj_pc1.sprite_index=spr_pc1_dying;
+		}
 	}
 
 }

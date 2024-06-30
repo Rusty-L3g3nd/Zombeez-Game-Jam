@@ -16,6 +16,7 @@ function getControls(){
 	key_left=keyboard_check(vk_left);
 	key_right=keyboard_check(vk_right);
 	
+	
 	//jumps
 	key_jump_pressed=keyboard_check_pressed(vk_space);
 	key_jump=keyboard_check(vk_space);

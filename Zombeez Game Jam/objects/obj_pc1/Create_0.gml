@@ -3,6 +3,9 @@
 controlSetup();
 characterChoice=1;
 //basic movement
+hp=10;
+isDead=false;
+
 moveDir=0;
 moveSpd=2;
 dshSpd=20;
