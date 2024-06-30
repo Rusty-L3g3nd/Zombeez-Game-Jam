@@ -15,6 +15,11 @@
     {"id":{"name":"spr_building3","path":"sprites/spr_building3/spr_building3.yy",},"order":5,},
     {"id":{"name":"spr_vfx_bubble","path":"sprites/spr_vfx_bubble/spr_vfx_bubble.yy",},"order":20,},
     {"id":{"name":"SprWall","path":"sprites/SprWall/SprWall.yy",},"order":7,},
+<<<<<<< HEAD
+=======
+    {"id":{"name":"spr_lr","path":"sprites/spr_lr/spr_lr.yy",},"order":3,},
+    {"id":{"name":"obj_platforms","path":"objects/obj_platforms/obj_platforms.yy",},"order":4,},
+>>>>>>> 896065eda7caa396c69af3273565a71383d3f35f
     {"id":{"name":"spr_pc1_running_shotgun","path":"sprites/spr_pc1_running_shotgun/spr_pc1_running_shotgun.yy",},"order":4,},
     {"id":{"name":"spr_lightpost2","path":"sprites/spr_lightpost2/spr_lightpost2.yy",},"order":1,},
     {"id":{"name":"spr_crate2","path":"sprites/spr_crate2/spr_crate2.yy",},"order":1,},
@@ -40,8 +45,10 @@
     {"id":{"name":"spr_tent2","path":"sprites/spr_tent2/spr_tent2.yy",},"order":6,},
     {"id":{"name":"spr_pc1_running_db","path":"sprites/spr_pc1_running_db/spr_pc1_running_db.yy",},"order":3,},
     {"id":{"name":"spr_zombie2_dying","path":"sprites/spr_zombie2_dying/spr_zombie2_dying.yy",},"order":2,},
+    {"id":{"name":"obj_btnR","path":"objects/obj_btnR/obj_btnR.yy",},"order":5,},
     {"id":{"name":"spr_pc1_running_dbmg","path":"sprites/spr_pc1_running_dbmg/spr_pc1_running_dbmg.yy",},"order":6,},
     {"id":{"name":"spr_bush","path":"sprites/spr_bush/spr_bush.yy",},"order":7,},
+    {"id":{"name":"obj_btnZC","path":"objects/obj_btnZC/obj_btnZC.yy",},"order":1,},
     {"id":{"name":"spr_pc4_jmp","path":"sprites/spr_pc4_jmp/spr_pc4_jmp.yy",},"order":0,},
     {"id":{"name":"spr_env_bushes","path":"sprites/spr_env_bushes/spr_env_bushes.yy",},"order":6,},
     {"id":{"name":"spr_zombie1_walking2","path":"sprites/spr_zombie1_walking2/spr_zombie1_walking2.yy",},"order":4,},
@@ -58,11 +65,14 @@
     {"id":{"name":"spr_env_building_1","path":"sprites/spr_env_building_1/spr_env_building_1.yy",},"order":7,},
     {"id":{"name":"spr_london_bg","path":"sprites/spr_london_bg/spr_london_bg.yy",},"order":2,},
     {"id":{"name":"spr_drone_flame","path":"sprites/spr_drone_flame/spr_drone_flame.yy",},"order":2,},
+    {"id":{"name":"spr_spacebar","path":"sprites/spr_spacebar/spr_spacebar.yy",},"order":4,},
     {"id":{"name":"spr_crate1","path":"sprites/spr_crate1/spr_crate1.yy",},"order":0,},
     {"id":{"name":"spr_train1","path":"sprites/spr_train1/spr_train1.yy",},"order":0,},
     {"id":{"name":"spr_lightpost1","path":"sprites/spr_lightpost1/spr_lightpost1.yy",},"order":0,},
+    {"id":{"name":"spr_x","path":"sprites/spr_x/spr_x.yy",},"order":1,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":10,},
     {"id":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"order":2,},
+    {"id":{"name":"spr_l","path":"sprites/spr_l/spr_l.yy",},"order":5,},
     {"id":{"name":"spr_weapon_slot","path":"sprites/spr_weapon_slot/spr_weapon_slot.yy",},"order":3,},
     {"id":{"name":"spr_subway_platform","path":"sprites/spr_subway_platform/spr_subway_platform.yy",},"order":2,},
     {"id":{"name":"spr_pc1_standing_uzi","path":"sprites/spr_pc1_standing_uzi/spr_pc1_standing_uzi.yy",},"order":2,},
@@ -74,9 +84,11 @@
     {"id":{"name":"obj_drum","path":"objects/obj_drum/obj_drum.yy",},"order":2,},
     {"id":{"name":"spr_tent1","path":"sprites/spr_tent1/spr_tent1.yy",},"order":5,},
     {"id":{"name":"spr_subway_mg","path":"sprites/spr_subway_mg/spr_subway_mg.yy",},"order":1,},
+    {"id":{"name":"obj_btnL","path":"objects/obj_btnL/obj_btnL.yy",},"order":4,},
     {"id":{"name":"spr_double_barrel","path":"sprites/spr_double_barrel/spr_double_barrel.yy",},"order":1,},
     {"id":{"name":"spr_park_platform","path":"sprites/spr_park_platform/spr_park_platform.yy",},"order":0,},
     {"id":{"name":"spr_pc1_running_supershotgun","path":"sprites/spr_pc1_running_supershotgun/spr_pc1_running_supershotgun.yy",},"order":7,},
+    {"id":{"name":"obj_btnC","path":"objects/obj_btnC/obj_btnC.yy",},"order":3,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
     {"id":{"name":"Sprite60","path":"sprites/Sprite60/Sprite60.yy",},"order":8,},
     {"id":{"name":"spr_subway_bg","path":"sprites/spr_subway_bg/spr_subway_bg.yy",},"order":0,},
@@ -104,6 +116,7 @@
     {"id":{"name":"spr_bush_RT_edge","path":"sprites/spr_bush_RT_edge/spr_bush_RT_edge.yy",},"order":9,},
     {"id":{"name":"testing","path":"rooms/testing/testing.yy",},"order":2,},
     {"id":{"name":"obj_zSpawner","path":"objects/obj_zSpawner/obj_zSpawner.yy",},"order":15,},
+    {"id":{"name":"Sprite133","path":"sprites/Sprite133/Sprite133.yy",},"order":2,},
     {"id":{"name":"spr_zombie3_atk","path":"sprites/spr_zombie3_atk/spr_zombie3_atk.yy",},"order":3,},
     {"id":{"name":"spr_env_ground_tile","path":"sprites/spr_env_ground_tile/spr_env_ground_tile.yy",},"order":4,},
     {"id":{"name":"spr_zombie2_atk","path":"sprites/spr_zombie2_atk/spr_zombie2_atk.yy",},"order":1,},
@@ -131,6 +144,7 @@
     {"id":{"name":"spr_boss1_dying","path":"sprites/spr_boss1_dying/spr_boss1_dying.yy",},"order":1,},
     {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},"order":3,},
     {"id":{"name":"spr_blade","path":"sprites/spr_blade/spr_blade.yy",},"order":1,},
+    {"id":{"name":"spr_z","path":"sprites/spr_z/spr_z.yy",},"order":0,},
     {"id":{"name":"GenralFunctions","path":"scripts/GenralFunctions/GenralFunctions.yy",},"order":0,},
     {"id":{"name":"spr_zombie2_walking","path":"sprites/spr_zombie2_walking/spr_zombie2_walking.yy",},"order":0,},
     {"id":{"name":"boss1","path":"objects/boss1/boss1.yy",},"order":4,},
@@ -161,11 +175,13 @@
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"spr_shotgun_muzzleflash","path":"sprites/spr_shotgun_muzzleflash/spr_shotgun_muzzleflash.yy",},"order":4,},
     {"id":{"name":"obj_muzzleflash","path":"objects/obj_muzzleflash/obj_muzzleflash.yy",},"order":2,},
+    {"id":{"name":"spr_c","path":"sprites/spr_c/spr_c.yy",},"order":2,},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":14,},
     {"id":{"name":"spr_zombie3_standing","path":"sprites/spr_zombie3_standing/spr_zombie3_standing.yy",},"order":0,},
     {"id":{"name":"spr_carousel","path":"sprites/spr_carousel/spr_carousel.yy",},"order":1,},
     {"id":{"name":"spr_full_env","path":"sprites/spr_full_env/spr_full_env.yy",},"order":3,},
     {"id":{"name":"spr_button_small","path":"sprites/spr_button_small/spr_button_small.yy",},"order":2,},
+    {"id":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"order":0,},
     {"id":{"name":"obj_pc1","path":"objects/obj_pc1/obj_pc1.yy",},"order":0,},
   ],
   "Options": [
@@ -186,19 +202,13 @@
     "children": [],
   },
   "RoomOrderNodes": [
-<<<<<<< HEAD
+    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"roomId":{"name":"testing","path":"rooms/testing/testing.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
-=======
->>>>>>> 76b8a5971b2ca3c5a3ac1891947b0e61933e3775
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
-    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
-<<<<<<< HEAD
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
-=======
     {"roomId":{"name":"testing","path":"rooms/testing/testing.yy",},},
->>>>>>> 76b8a5971b2ca3c5a3ac1891947b0e61933e3775
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
@@ -252,6 +262,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_zombie4","folderPath":"folders/Sprites/spr_zombies/spr_zombie4.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_buttons","folderPath":"folders/Sprites/spr_buttons.yy","order":27,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"obj_btns","folderPath":"folders/Objects/obj_btns.yy","order":18,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
