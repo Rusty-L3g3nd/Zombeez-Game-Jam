@@ -69,14 +69,14 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D671A8D","properties":[],"isDnd":false,"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_489B1A22","properties":[],"isDnd":false,"objectId":{"name":"zombie1","path":"objects/zombie1/zombie1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1280.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18DD4A8C","properties":[],"isDnd":false,"objectId":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":448.0,},
-
+<<<<<<< HEAD
 
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13F31278","properties":[],"isDnd":false,"objectId":{"name":"boss1","path":"objects/boss1/boss1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":640.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
 
-
-
+=======
+>>>>>>> features
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EDAE12","properties":[],"isDnd":false,"objectId":{"name":"obj_zSpawner","path":"objects/obj_zSpawner/obj_zSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":365.0,"y":712.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B90CB6B","properties":[],"isDnd":false,"objectId":{"name":"obj_zSpawner","path":"objects/obj_zSpawner/obj_zSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":485.0,"y":712.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38B13CD1","properties":[],"isDnd":false,"objectId":{"name":"obj_zSpawner","path":"objects/obj_zSpawner/obj_zSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":606.0,"y":712.0,},
@@ -139,12 +139,12 @@
     {"name":"inst_5D671A8D","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_489B1A22","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_18DD4A8C","path":"rooms/Room5/Room5.yy",},
-
+<<<<<<< HEAD
 
     {"name":"inst_13F31278","path":"rooms/Room5/Room5.yy",},
 
-
-
+=======
+>>>>>>> features
     {"name":"inst_5EDAE12","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_B90CB6B","path":"rooms/Room5/Room5.yy",},
     {"name":"inst_38B13CD1","path":"rooms/Room5/Room5.yy",},
