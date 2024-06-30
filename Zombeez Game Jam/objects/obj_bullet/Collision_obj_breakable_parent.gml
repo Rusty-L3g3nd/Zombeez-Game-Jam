@@ -23,5 +23,7 @@ with(other){
 	};
 };
 
-instance_create_layer(x, y, "Instances", obj_collision_particles);
-instance_destroy(self);
+if(other.hp>0){
+	instance_create_layer(x, y, "Instances", obj_collision_particles);
+	instance_destroy(self);
+};
