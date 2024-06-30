@@ -47,8 +47,8 @@ function getControls(){
 	key_down=keyboard_check(vk_down);
 	
 	// Shoot
-	shootPressed = keyboard_check_pressed(ord("Z"));
-	shootHeld = keyboard_check(ord("Z"));
+	shootPressed = keyboard_check_pressed(ord("C"));
+	shootHeld = keyboard_check(ord("C"));
 }
 
 
