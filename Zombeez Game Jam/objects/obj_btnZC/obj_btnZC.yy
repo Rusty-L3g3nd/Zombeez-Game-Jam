@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_btnZC",
-  "spriteId": {
-    "name": "Sprite133",
-    "path": "sprites/Sprite133/Sprite133.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

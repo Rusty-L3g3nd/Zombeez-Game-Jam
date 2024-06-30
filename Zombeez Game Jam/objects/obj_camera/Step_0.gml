@@ -16,3 +16,6 @@ if(instance_exists(obj_pc1)){
 		yrecoil -= 1;
 	};
 };
+
+layer_hspeed("Assets_1", -1*sign(obj_pc1.xspd)/8);
+layer_hspeed("Background", -1*sign(obj_pc1.xspd)/16);
