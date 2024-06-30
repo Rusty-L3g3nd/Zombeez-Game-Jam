@@ -5,6 +5,10 @@ enum states{
 	idle,
 	move,
 	follow,
-	attack
+	attack,
+	dying,
+	dead
 }
 state=states.idle;
+
+recoil = 0;

@@ -1,11 +1,26 @@
 if(hp<=0){
-	if(countDown==60)
+	if(countDown==60){
 		sprite_index=sprite_dying;
-	if(countDown==0)
-		instance_destroy(self);
+		image_speed = 1.5;
+		state = states.dying;
+	};
+	
+	//if(ev_animation_end){
+	//	image_speed = 0;
+	//};
+	
+	if(countDown==0){
+		//instance_destroy(self);
+	};
+	
 	countDown--;
-}
-else{
+}else{
+	
+	if(recoil){
+		x -= recoil*sign(image_xscale);
+		recoil -= 1;
+	};
+	
 	xspd=moveDir*moveSpd
 	
 		if(moveDir != 0){
