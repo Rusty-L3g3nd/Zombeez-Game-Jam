@@ -9,7 +9,7 @@
   "bitDepth": 1,
   "bitRate": 128,
   "soundFile": "zombie_roar_2.mp3",
-  "volume": 1.0,
+  "volume": 0.38,
   "preload": false,
   "audioGroupId": {
     "name": "audiogroup_default",

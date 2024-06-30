@@ -26,6 +26,7 @@ if(hp<=0){
 		if(moveDir != 0){
 			sprite_index = sprite_walking;
 			image_xscale = moveDir*-1;
+			var randomizer= irandom_range(1,2);
 		}else if(moveDir ==0 and state==states.idle){
 			sprite_index = sprite_standing;
 		};
@@ -91,7 +92,6 @@ if(hp<=0){
 
 	if(state==states.attack){
 		moveDir=0;
-	
 		sprite_index=sprite_atk;
 		if(distance_to_object(obj_pc1) > attackRadius){
 			state=states.idle;
