@@ -39,6 +39,7 @@ sprite_jumping=spr_pc1_jmp;
 image_xscale = 1;
 image_speed = 0.4;
 
+
 // Shooting variables
 slot1 = 0;
 slot2 = 0;

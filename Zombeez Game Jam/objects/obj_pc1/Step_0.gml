@@ -126,7 +126,7 @@ if(onGround){
 		image_yscale += 0.1;
 	};
 	if(image_xscale != (1*sign(image_xscale))){
-		//x += (ceil((sprite_width*image_xscale)-(sprite_width*(image_xscale+0.1)))/2)*sign(image_xscale);
+		//x -= (floor((sprite_width*image_xscale)-(sprite_width*(image_xscale+0.1)))/2)*sign(image_xscale);
 		image_xscale = lerp(image_xscale, 1*sign(image_xscale), 0.1);
 	};
 };
