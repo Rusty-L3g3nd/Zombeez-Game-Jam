@@ -35,10 +35,6 @@
 
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_breakable_parent","path":"objects/obj_breakable_parent/obj_breakable_parent.yy",},},
 
-
-
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_bbox","path":"objects/obj_bbox/obj_bbox.yy",},},
-
   ],
   "properties": [],
   "overriddenProperties": [],

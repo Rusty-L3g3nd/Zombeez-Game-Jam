@@ -57,6 +57,7 @@
     {"id":{"name":"spr_london_bg","path":"sprites/spr_london_bg/spr_london_bg.yy",},"order":2,},
     {"id":{"name":"spr_drone_flame","path":"sprites/spr_drone_flame/spr_drone_flame.yy",},"order":2,},
     {"id":{"name":"spr_crate1","path":"sprites/spr_crate1/spr_crate1.yy",},"order":0,},
+    {"id":{"name":"obj_bbox","path":"objects/obj_bbox/obj_bbox.yy",},"order":15,},
     {"id":{"name":"spr_train1","path":"sprites/spr_train1/spr_train1.yy",},"order":0,},
     {"id":{"name":"spr_lightpost1","path":"sprites/spr_lightpost1/spr_lightpost1.yy",},"order":0,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":10,},
