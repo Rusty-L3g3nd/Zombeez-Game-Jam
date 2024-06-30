@@ -143,7 +143,6 @@
     {"id":{"name":"spr_pc1_standing_dbmg","path":"sprites/spr_pc1_standing_dbmg/spr_pc1_standing_dbmg.yy",},"order":6,},
     {"id":{"name":"spr_pc3_standing31","path":"sprites/spr_pc3_standing31/spr_pc3_standing31.yy",},"order":0,},
     {"id":{"name":"obj_breakable_parent","path":"objects/obj_breakable_parent/obj_breakable_parent.yy",},"order":0,},
-    {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},"order":5,},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":2,},
     {"id":{"name":"spr_double_barreled_MG","path":"sprites/spr_double_barreled_MG/spr_double_barreled_MG.yy",},"order":4,},
     {"id":{"name":"spr_pc2_standing21","path":"sprites/spr_pc2_standing21/spr_pc2_standing21.yy",},"order":0,},
@@ -213,7 +212,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},

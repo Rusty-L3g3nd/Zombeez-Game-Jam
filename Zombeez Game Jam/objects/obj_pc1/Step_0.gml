@@ -131,3 +131,7 @@ if(!isDead){
 		};
 	};
 }
+else{
+	
+	room_goto(MainMenu);
+}

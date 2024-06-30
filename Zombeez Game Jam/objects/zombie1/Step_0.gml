@@ -97,10 +97,11 @@ if(hp<=0){
 			state=states.idle;
 		}
 		if(obj_pc1.hp>0){
-			obj_pc1.hp--;
+			obj_pc1.hp-=1;;
 		}
 		else{
 			obj_pc1.sprite_index=spr_pc1_dying;
+			obj_pc1.isDead=true;
 		}
 	}
 

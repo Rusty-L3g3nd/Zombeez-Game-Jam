@@ -3,7 +3,7 @@
 controlSetup();
 characterChoice=1;
 //basic movement
-hp=10;
+hp=500;
 isDead=false;
 
 moveDir=0;
