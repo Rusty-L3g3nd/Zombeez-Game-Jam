@@ -115,6 +115,7 @@
     {"id":{"name":"spr_pc2_standing21","path":"sprites/spr_pc2_standing21/spr_pc2_standing21.yy",},"order":0,},
     {"id":{"name":"spr_muzzle_flash","path":"sprites/spr_muzzle_flash/spr_muzzle_flash.yy",},"order":2,},
     {"id":{"name":"spr_lightpost3","path":"sprites/spr_lightpost3/spr_lightpost3.yy",},"order":2,},
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},"order":3,},
     {"id":{"name":"spr_blade","path":"sprites/spr_blade/spr_blade.yy",},"order":1,},
     {"id":{"name":"GenralFunctions","path":"scripts/GenralFunctions/GenralFunctions.yy",},"order":0,},
     {"id":{"name":"spr_haunted_house","path":"sprites/spr_haunted_house/spr_haunted_house.yy",},"order":3,},
@@ -165,6 +166,7 @@
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"testing","path":"rooms/testing/testing.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
