@@ -17,6 +17,7 @@
     {"id":{"name":"spr_lr","path":"sprites/spr_lr/spr_lr.yy",},"order":3,},
     {"id":{"name":"obj_platforms","path":"objects/obj_platforms/obj_platforms.yy",},"order":4,},
     {"id":{"name":"spr_pc1_running_shotgun","path":"sprites/spr_pc1_running_shotgun/spr_pc1_running_shotgun.yy",},"order":4,},
+    {"id":{"name":"obj_breakables_spawner","path":"objects/obj_breakables_spawner/obj_breakables_spawner.yy",},"order":6,},
     {"id":{"name":"spr_lightpost2","path":"sprites/spr_lightpost2/spr_lightpost2.yy",},"order":1,},
     {"id":{"name":"spr_crate2","path":"sprites/spr_crate2/spr_crate2.yy",},"order":1,},
     {"id":{"name":"spr_pc1_running_uzi","path":"sprites/spr_pc1_running_uzi/spr_pc1_running_uzi.yy",},"order":2,},
