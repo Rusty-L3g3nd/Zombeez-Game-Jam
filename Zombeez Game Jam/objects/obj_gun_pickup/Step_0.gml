@@ -13,6 +13,7 @@ if(instance_exists(obj_pc1)){
 				sprite_standing = standAnim(, slot1, slot2);
 				sprite_running = runAnim(, slot1, slot2);
 			};
+			obj_btnZC.alpha = 0;
 			instance_destroy(self);
 		};
 		pickupTimerC = ((keyboard_check_pressed(ord("Z"))*(room_speed/2)) + (pickupTimerC - keyboard_check(ord("Z")))) * (1 - keyboard_check_released(ord("Z")));
@@ -24,6 +25,7 @@ if(instance_exists(obj_pc1)){
 				sprite_running = runAnim(, slot1, slot2);
 			};
 			instance_destroy(self);
+			obj_btnZC.alpha = 0;
 		};
 	}else{
 		image_index = 0;
