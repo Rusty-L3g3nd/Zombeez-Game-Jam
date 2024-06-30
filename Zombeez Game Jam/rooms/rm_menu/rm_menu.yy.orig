@@ -61,11 +61,11 @@
     {"name":"inst_77EB384C","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_9DF617D","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_49C232FA","path":"rooms/rm_menu/rm_menu.yy",},
-
+<<<<<<< HEAD
     {"name":"inst_5E021D3B","path":"rooms/rm_menu/rm_menu.yy",},
-
+=======
     {"name":"inst_5F4DDC5D","path":"rooms/rm_menu/rm_menu.yy",},
-
+>>>>>>> 52aba5fd002e10352f75c58979c0f1571334ea35
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

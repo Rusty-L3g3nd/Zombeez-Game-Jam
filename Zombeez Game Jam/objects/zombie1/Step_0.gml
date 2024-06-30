@@ -26,6 +26,7 @@ if(hp<=0){
 		if(moveDir != 0){
 			sprite_index = sprite_walking;
 			image_xscale = moveDir*-1;
+			var randomizer= irandom_range(1,2);
 		}else if(moveDir ==0 and state==states.idle){
 			sprite_index = sprite_standing;
 		};
@@ -69,10 +70,12 @@ if(hp<=0){
 	if state== states.idle{
 		moveDir=0;
 		if(distance_to_object(obj_pc1) < detectRadius){
-			state=states.follow;
+			if((obj_pc1.y-y)*(obj_pc1.y-y) < 65  ){
+				state=states.follow;
+			}
 		}
-	
 	}
+
 	if(state == states.follow){
 		if(!place_empty(x+xspd,y,obj_wall)){
 			state=states.idle;
@@ -89,7 +92,6 @@ if(hp<=0){
 
 	if(state==states.attack){
 		moveDir=0;
-	
 		sprite_index=sprite_atk;
 		if(distance_to_object(obj_pc1) > attackRadius){
 			state=states.idle;
